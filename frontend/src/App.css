@@ -1,0 +1,46 @@
+.app {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f1f1f1;
+    padding: 1em 0;
+}
+
+tab {
+    cursor: pointer;
+    padding: 1em;
+    transition: background-color 0.3s;
+}
+'tab:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 2em;
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2em;
+    }
+    tabs {
+        flex-direction: column;
+    }
+    tab {
+        margin: 0.5em 0;
+        text-align: center;
+    }
+}
